@@ -5,10 +5,7 @@ import { NavigationContainer } from "@react-navigation/native";
 import { NativeBaseProvider, Text } from "native-base";
 import Ionicons from "@expo/vector-icons/Ionicons";
 import Home from "./screens/home";
-import Profile from "./screens/profile";
-import NewsDetail from "./screens/news-detail";
 import Kategori from "./screens/Kategori";
-import Sayur from "./screens/Sayur";
 import Produkdetail from "./screens/produkdetail";
 
 
@@ -60,7 +57,6 @@ const Tabs = () => {
       })}
     >
       <Tab.Screen name="Home" component={Home} options={noHead} />
-      <Tab.Screen name="Profile" component={Profile} options={noHead} />
     </Tab.Navigator>
   );
 };
@@ -73,7 +69,6 @@ const App = () => {
 
           <Stack.Screen name="Tabs" component={Tabs} options={noHead} />
           <Stack.Screen name="Kategori" component={Kategori} />
-          <Stack.Screen name="Sayur" component={Sayur} />
           <Stack.Screen name="Produkdetail" component={Produkdetail} />
 
           
@@ -81,11 +76,7 @@ const App = () => {
 
           
 
-          <Stack.Screen
-            name="News Detail"
-            component={NewsDetail}
-            options={noHead}
-          />
+          
         </Stack.Navigator>
       </NavigationContainer>
     </NativeBaseProvider>

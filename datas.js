@@ -4,63 +4,48 @@ const content =
 const datas = [
   {
     id: 1,
-    nama: "Wortel",
+    nama: "Bayam",
     kategori :"Sayur Hijau",
-    date: "10 Oktober 2023",
+    image:"https://asset-2.tstatic.net/tribunnews/foto/bank/images/bayam_20150402_104741.jpg",
     harga:"11000",
-    title:
-      "Dorong Pengembangan UMKM, IT Telkom Surabaya Gandeng UD Rozi dalam Pembuatan Website",
-    image:
-      "https://ittelkom-sby.ac.id/wp-content/uploads/2022/10/Salinan-IMG_0823-768x512.jpg",
+    deskripsi:"Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. ",
     content: content,
   },
   {
-    id: 2,
-    date: "10 Oktober 2023",
-    harga:"11000",
-    nama: "Wortel",
+    id:2,
+    nama: "Sawi",
     kategori :"Sayur Hijau",
-
-
-    title: "Mahasiswa ITTelkom Surabaya Menang Kompetisi di New Delhi",
-    image:
-      "https://ittelkom-sby.ac.id/wp-content/uploads/2022/10/asdfghjk-768x492.jpg",
+    harga:"11000",
+    image:"https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRAgK_3JUosNVLwGH3DBTnN7MoQehc3i61otQ&usqp=CAU",
+    deskripsi:"Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. ",
     content: content,
   },
   {
     id: 3,
-    date: "10 Oktober 2023",
-    harga:"11000",
-    nama: "Wortel",
+    nama: "Brokoli",
     kategori :"Sayur Hijau",
-
-    title:
-      "Benarkah Generasi Baru Generasi Strawberi? Ayo Belajar Growth Mindset dari Kampus ITTelkom Surabaya",
-    image:
-      "https://ittelkom-sby.ac.id/wp-content/uploads/2022/10/asdfghkl-768x472.jpg",
+    harga:"11000",
+    image:"https://cdn1-production-images-kly.akamaized.net/3XoTFv7UWyfIud_qOHTBSfduWNk=/2127x0:4863x3649/469x625/filters:quality(75):strip_icc():format(webp)/kly-media-production/medias/2907989/original/085792300_1568186157-shutterstock_318831905.jpg",
+    deskripsi:"Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. ",
     content: content,
   },
   {
     id: 4,
-    date: "10 Oktober 2023",
-    harga:"13000",
-    kategori :"Bumbu",
-
-    title: "4 Industri Tahan Resesi! Pastikan Kemampuanmu Termasuk Di Dalamnya",
-    image:
-      "https://ittelkom-sby.ac.id/wp-content/uploads/2022/10/mbacay-768x512.jpg",
+    nama: "Lombok",
+    kategori :"Bumbu Dapur",
+    image:"https://hortikultura.pertanian.go.id/wp-content/uploads/2015/06/Cabai.jpg",
+    harga:"11000",
+    deskripsi:"Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. ",
     content: content,
   },
   {
     id: 5,
-    date: "Oktober2022",
-    harga:"12000",
-    kategori :"Bumbu",
+    nama: "Bawang Merah",
+    kategori :"Bumbu Dapur",
+    image:"https://images.tokopedia.net/img/cache/700/hDjmkQ/2023/1/1/557b33ef-972f-4aca-a97e-0eda69911e84.jpg",
 
-    title:
-      "Selamat Datang Mahasiswa Baru, PKKMB ITTelkom Surabaya Berlangsung Secara Luring",
-    image:
-      "https://ittelkom-sby.ac.id/wp-content/uploads/2022/09/DSC_1931-768x512.jpg",
+    harga:"11000",
+    deskripsi:"Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. ",
     content: content,
   },
   

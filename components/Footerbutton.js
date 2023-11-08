@@ -4,7 +4,7 @@ import React from 'react'
 
 const footerbutton = () => {
   return (
-        <Box p={3}>
+        <Box p={3} >
             <Button rounded={30}>
                 <Heading size={"sm"} p={5}>Tambahkan Ke Keranjang
 
