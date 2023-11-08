@@ -1,41 +1,40 @@
-import { Heading, Center, Text, ScrollView, Box, Image } from "native-base";
-
+import { Heading, Center, Text, ScrollView, Box, Image, VStack } from "native-base";
+import { SafeAreaView } from "react-native-safe-area-context";
+import Footerbutton from "../components/Footerbutton";
 const Produkdetail = ({ route }) => {
   // Get the params
   const params = route.params.category;
   return (
-    <>
-    <ScrollView>
+    <SafeAreaView style={{flex: 1}}>
+      <ScrollView>
       <Box
-      backgroundColor="black"
-      w="full"
-      h="300"
-      rounded="55"
-      >
-      </Box>
-      <Box
-      background="primary.50"
-      w="full"
-      marginLeft="5"
-      marginTop="5"
-      >
-          <Text
-          fontSize="30"
-          >{params.nama}
-          </Text>
-        <Text
-        textAlign="left"
-        fontSize="10"
-        >Harga/1kg</Text>
-          <Text
-        textAlign="left"
-        color="secondary.700"
-        fontSize="20"
-        >Rp.{params.harga}</Text>
-    </Box>
-    </ScrollView>
+            backgroundColor="primary.400"
+            w="full"
+            h="40"
+            >
+
+            </Box>
+        <VStack p={3}>
+          <Heading size={"lg"}>{params.nama}</Heading>
+          <Heading size={"sm"} >Harga/1kg</Heading>
+          <Heading size={"md"} color={"amber.500"}>Rp.{params.harga}</Heading>
+          <Box 
+          borderWidth="1" marginTop="5"
+          ></Box>
+        </VStack>
+        <VStack p={3}>
+        <Box>
+            <Heading size={"sm"}>Deskripsi</Heading>
+            <Text>{params.title}</Text>
+          </Box>
+          <Footerbutton></Footerbutton>
+        </VStack>
        
-    </>
+
+      </ScrollView>
+    </SafeAreaView>
+    
+       
   );
 };
 

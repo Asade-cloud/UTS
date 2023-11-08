@@ -8,8 +8,7 @@ const Home = () => {
 
 
   const navigation = useNavigation();
-const fruits = [""];
-fruits.push("Kiwi");
+
   return (
     <>
     <ScrollView>
@@ -67,7 +66,7 @@ fruits.push("Kiwi");
                 <TouchableOpacity
                 activeOpacity={0.5}
                 onPress={() =>
-                  navigation.navigate("Kategori", (fruits ))
+                  navigation.navigate("Kategori")
                 }
               >
                 <Text

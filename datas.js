@@ -5,6 +5,7 @@ const datas = [
   {
     id: 1,
     nama: "Wortel",
+    kategori :"Sayur Hijau",
     date: "10 Oktober 2023",
     harga:"11000",
     title:
@@ -18,6 +19,8 @@ const datas = [
     date: "10 Oktober 2023",
     harga:"11000",
     nama: "Wortel",
+    kategori :"Sayur Hijau",
+
 
     title: "Mahasiswa ITTelkom Surabaya Menang Kompetisi di New Delhi",
     image:
@@ -29,6 +32,7 @@ const datas = [
     date: "10 Oktober 2023",
     harga:"11000",
     nama: "Wortel",
+    kategori :"Sayur Hijau",
 
     title:
       "Benarkah Generasi Baru Generasi Strawberi? Ayo Belajar Growth Mindset dari Kampus ITTelkom Surabaya",
@@ -40,6 +44,7 @@ const datas = [
     id: 4,
     date: "10 Oktober 2023",
     harga:"13000",
+    kategori :"Bumbu",
 
     title: "4 Industri Tahan Resesi! Pastikan Kemampuanmu Termasuk Di Dalamnya",
     image:
@@ -50,6 +55,7 @@ const datas = [
     id: 5,
     date: "Oktober2022",
     harga:"12000",
+    kategori :"Bumbu",
 
     title:
       "Selamat Datang Mahasiswa Baru, PKKMB ITTelkom Surabaya Berlangsung Secara Luring",
