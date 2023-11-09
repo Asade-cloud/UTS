@@ -1,8 +1,10 @@
-import { Heading, Image, Text, HStack } from "native-base";
-import { Box, ScrollView, View, Input, } from "native-base";
+import { Heading, Image, Text, HStack, Center } from "native-base";
+import { Box, ScrollView, Input, } from "native-base";
 import { TouchableOpacity } from "react-native";
 import { useNavigation } from "@react-navigation/native";
 import datas from "../datas";
+import { SafeAreaView } from "react-native-safe-area-context";
+
 
 const Home = () => {
 
@@ -10,24 +12,25 @@ const Home = () => {
   const navigation = useNavigation();
 
   return (
-    <>
+    <SafeAreaView>
       <ScrollView>
+        <Box py={3}>
+          <Input placeholder="Apa Yang Anda Cari" w="100%"  borderWidth={2} />
+        </Box>
         <Box
           w="full"
-          h="300"
-          borderColor="coolGray.600"
-          borderWidth="1"
           rounded="lg"
-          borderRadius="30"
-          padding="30"
-          backgroundColor="black"
-
+          h="300"
         >
-          <Box alignItems="center"
-            marginTop="180"
-          >
-            <Input mx="3" placeholder="Input" w="100%" />
-          </Box>
+          <Center>
+            <Image
+              source={require('../assets/haha.jpg')}
+              w="full"
+              h="full"
+              rounded="lg"
+
+            />
+          </Center>
         </Box>
         <HStack p={3} justifyContent={"space-between"}>
           <Heading>Bumbu Dapur</Heading>
@@ -40,8 +43,9 @@ const Home = () => {
             <Text fontSize="15" color="amber.500"> Lihat Semua</Text>
           </TouchableOpacity>
         </HStack>
+
         <Box py={"4"}>
-        <ScrollView horizontal={true} showsHorizontalScrollIndicator={false}>
+          <ScrollView horizontal={true} showsHorizontalScrollIndicator={false}>
             {datas.filter
               ((category) => category.kategori == "Bumbu Dapur")
 
@@ -98,13 +102,13 @@ const Home = () => {
             <Text fontSize="15" color="amber.500"> Lihat Semua</Text>
           </TouchableOpacity>
         </HStack>
-            <TouchableOpacity
-              activeOpacity={0.5}
-              onPress={() =>
-                navigation.navigate("Sayur", { category: category })
-              }
-            >
-            </TouchableOpacity>
+        <TouchableOpacity
+          activeOpacity={0.5}
+          onPress={() =>
+            navigation.navigate("Produkdetail", { category: category })
+          }
+        >
+        </TouchableOpacity>
 
         <Box py={"4"} >
           <ScrollView horizontal={true} showsHorizontalScrollIndicator={false}>
@@ -152,8 +156,7 @@ const Home = () => {
 
         </Box>
       </ScrollView>
-
-    </>
+    </SafeAreaView>
   );
 };
 

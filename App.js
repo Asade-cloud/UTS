@@ -27,12 +27,6 @@ const Tabs = () => {
               iconName = "home-outline";
               break;
            
-            case "Video":
-              iconName = "videocam-outline";
-              break;
-            case "Profile":
-              iconName = "person-circle-outline";
-              break;
           }
           return (
             <Ionicons
@@ -44,7 +38,7 @@ const Tabs = () => {
         },
         tabBarIconStyle: { marginTop: 5 },
         tabBarStyle: {
-          height: 70,
+          height: 100,
           borderTopWidth: 0,
         },
         tabBarLabel: ({ children, color, focused }) => {

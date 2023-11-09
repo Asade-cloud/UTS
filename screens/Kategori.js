@@ -1,6 +1,5 @@
 import React, {useState, useMemo} from "react";
-import { Text,SafeAreaView, ScrollView, HStack, Center} from "native-base";
-import { useNavigation } from "@react-navigation/native";
+import { Text, ScrollView, HStack, Center} from "native-base";
 import { TouchableOpacity } from "react-native";
 import ProductCard from "../components/ProductCard";
 import datas from "../datas";
@@ -8,7 +7,6 @@ import datas from "../datas";
 
 const Kategori = () => {
   const [category, setCategory] = useState('NONE');
-    const [isActive, setIsActive] = useState(false);
 
     const filteredList = useMemo(
         () => {
@@ -20,49 +18,35 @@ const Kategori = () => {
 
     const onClick = (category) => () => {
         setCategory(category)
-        setIsActive(true);
     }
   // Get the params
   return (
     <ScrollView>
-      <ScrollView>
-      <HStack p={2} justifyContent={"space-between"} space={4}>
+      <HStack p={2} justifyContent={"space-between"} space={2}>
                     <TouchableOpacity onPress={onClick("NONE")}>
-                        <Center backgroundColor={isActive ? "primary.500" : "amber.100"} height={10} p={2} borderRadius={8}>
-                            <Text color={"white"}>All</Text>
+                    <Center backgroundColor={"amber.500"} height={10} p={2} borderRadius={8} shadow={3}>
+                            <Text color={"white"}>Semua</Text>
                         </Center>
                     </TouchableOpacity>
                     <TouchableOpacity onPress={onClick("Sayur Hijau")}>
-                        <Center backgroundColor={isActive ? "primary.500" : "amber.100"} height={10} p={2} borderRadius={8}>
-                            <Text color={"white"}>Gula</Text>
+                    <Center backgroundColor={"amber.500"} height={10} p={2} borderRadius={8} shadow={3}>
+                            <Text color={"white"}>Sayur Hijau</Text>
                         </Center>
                     </TouchableOpacity>
-                    <TouchableOpacity onPress={onClick("kakao")}>
-                        <Center backgroundColor={isActive ? "primary.500" : "amber.100"} height={10} p={2} borderRadius={8}>
-                            <Text color={"white"}>Kakao</Text>
+                    <TouchableOpacity onPress={onClick("Bumbu Dapur")}>
+                        <Center backgroundColor={"amber.500"} height={10} p={2} borderRadius={8} shadow={3}>
+                            <Text color={"white"}>Bumbu Dapur</Text>
                         </Center>
                     </TouchableOpacity>
-                    <TouchableOpacity onPress={onClick("jamur")}>
-                        <Center backgroundColor={isActive ? "primary.500" : "amber.100"} height={10} p={2} borderRadius={8}>
-                            <Text color={"white"}>Jamur</Text>
-                        </Center>
-                    </TouchableOpacity>
+                    
                 </HStack>
-                {/* <Button title="Clear" onPress={onClick('NONE')} />
-                <Button title="Status 1" onPress={onClick("gula")} color={"white"} />
-                <Button title="Status 2" onPress={onClick("kakao")} />
-                <Button title="Status 3" onPress={onClick(3)} /> */}
-                <HStack flexWrap={'wrap'} justifyContent={'space-between'}>
-                    {filteredList.map((item) => {
+                <HStack flexWrap={'wrap'} justifyContent={'space-between'} p={3}>
+                    {filteredList.map((category) => {
                         return (
-                            <ProductCard item={item} key={item.id} />
+                            <ProductCard category={category} key={category.id} />
                         )
                     })}
                 </HStack>
-
-      
-
-      </ScrollView>
     </ScrollView>
   );
 };
