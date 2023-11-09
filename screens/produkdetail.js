@@ -7,19 +7,19 @@ const Produkdetail = ({ route }) => {
   return (
     <SafeAreaView style={{ flex: 1 }}>
       <ScrollView>
-        <Center>
-          <Image source={{ uri: params.image }}
-            size="full"
-            alt="img"
-          />
-        </Center>
+        <Box>
+          <Center>
+            <Image source={{ uri: params.image }}
+              w="full"
+              h="300"
+              alt="imgproduk"
+            />
+          </Center>
+        </Box>
         <VStack p={3}>
           <Heading size={"lg"}>{params.nama}</Heading>
           <Heading fontSize="12" color="gray.400" >Harga/1kg</Heading>
           <Heading size={"md"} color={"amber.500"}>Rp.{params.harga}</Heading>
-          <Box
-            borderWidth="1" marginTop="5"
-          ></Box>
         </VStack>
         <VStack p={3}>
           <Box>
@@ -27,6 +27,7 @@ const Produkdetail = ({ route }) => {
             <Text>{params.deskripsi}</Text>
           </Box>
         </VStack>
+
       </ScrollView>
       <View style={{ position: 'absolute', left: 0, right: 0, bottom: 0 }}>
         <Footerbutton />

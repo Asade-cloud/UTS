@@ -38,7 +38,7 @@ const Tabs = () => {
         },
         tabBarIconStyle: { marginTop: 5 },
         tabBarStyle: {
-          height: 100,
+          height: 80,
           borderTopWidth: 0,
         },
         tabBarLabel: ({ children, color, focused }) => {
